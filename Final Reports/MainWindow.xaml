@@ -7,7 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Weekly&#xD;&#xA;" HorizontalAlignment="Left" Margin="144,133,0,0" VerticalAlignment="Top" Width="181" Height="111" Click="Button_Click"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="249*"/>
+            <ColumnDefinition Width="545*"/>
+        </Grid.ColumnDefinitions>
+        <Button Name="weekly" Content="Weekly&#xD;&#xA;" HorizontalAlignment="Left" Margin="144,133,0,0" VerticalAlignment="Top" Width="181" Height="111" Click="weekly_Button_Click" Grid.ColumnSpan="2"/>
+        <Button Name="monthly" Content="Monthly&#xA;" HorizontalAlignment="Left" Margin="145.193,133,0,0" VerticalAlignment="Top" Width="181" Height="111" Click="monthly_Button_Click" Grid.Column="1"/>
 
     </Grid>
 </Window>

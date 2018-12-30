@@ -107,6 +107,15 @@
       <DependentUpon>Manager_Complaint_Item.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Monthly.xaml.cs">
+      <DependentUpon>Monthly.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Monthly_Report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Monthly_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Regarding_Item_Comp_Recived.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -140,6 +149,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Monthly.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Weekly.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -186,6 +199,10 @@
     <EmbeddedResource Include="Manager_Complaint_Item.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Manager_Complaint_Item.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monthly_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Monthly_Report.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

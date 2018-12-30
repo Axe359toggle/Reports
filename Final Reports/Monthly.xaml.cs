@@ -11,29 +11,24 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Data;
-using System.Data.SqlClient;
-using CrystalDecisions.CrystalReports.Engine;
 
 namespace Final_Reports
 {
     /// <summary>
-    /// Interaction logic for Weekly.xaml
+    /// Interaction logic for Monthly.xaml
     /// </summary>
-    public partial class Weekly : Window
+    public partial class Monthly : Window
     {
-        public Weekly()
+        public Monthly()
         {
             InitializeComponent();
         }
 
-        private void CrystalReportsViewer_Loaded(object sender, RoutedEventArgs e)
+        private void Viwer2_Loaded(object sender, RoutedEventArgs e)
         {
-             Weekly_Report obj = new Weekly_Report();
-            obj.Load("@Weekly_Report.rep");
-            viewer1.ViewerCore.ReportSource = obj;
-           
+            Monthly_Report obj = new Monthly_Report();
+            obj.Load("@Monthly_Report.rep");
+          viwer2.ViewerCore.ReportSource = obj;
         }
-
     }
 }

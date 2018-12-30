@@ -27,9 +27,21 @@ namespace Final_Reports
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+           
+        }
+
+        private void weekly_Button_Click(object sender, RoutedEventArgs e)
+        {
             Weekly w = new Weekly();
             this.Hide();
             w.Show();
+        }
+
+        private void monthly_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Monthly m = new Monthly();
+            this.Hide();
+            m.Show();
         }
     }
 }
